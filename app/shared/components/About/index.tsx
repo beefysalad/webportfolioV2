@@ -23,12 +23,12 @@ export const About = () => {
             <p className='text-gray-600 dark:text-gray-300 leading-relaxed'>
               With over 2 years of experience in full-stack development, I
               specialize in creating scalable web applications and intuitive
-              user interfaces. I'm passionate about clean code, modern design,
+              user interfaces. Im passionate about clean code, modern design,
               and continuous learning.
             </p>
             <p className='text-gray-600 dark:text-gray-300 leading-relaxed'>
-              When I'm not coding, you'll find me playing videogames and
-              watching animes.
+              When Im not coding, youll find me playing videogames and watching
+              animes.
             </p>
             <div className='flex flex-wrap gap-3 pt-4'>
               {techStack.map((tech) => (
