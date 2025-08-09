@@ -52,7 +52,7 @@ export const Education = () => {
                   {edu.period}
                 </span>
               </div>
-              <p className='text-gray-600 dark:text-gray-300 mb-6 leading-relaxed'>
+              <p className='text-gray-600 dark:text-gray-300 mb-6 leading-relaxed text-center lg:text-left'>
                 {edu.description}
               </p>
               <div>
