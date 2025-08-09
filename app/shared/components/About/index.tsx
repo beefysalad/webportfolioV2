@@ -17,20 +17,23 @@ export const About = () => {
         </div>
         <div className='grid md:grid-cols-2 gap-12 items-center'>
           <div className='space-y-6'>
-            <h3 className='text-4xl font-bold text-gray-900 dark:text-white mb-4 lg:-mt-16'>
+            <h3 className='text-4xl font-bold text-gray-900 dark:text-white mb-4 lg:-mt-16 text-center lg:text-left'>
               John Patrick Ryan D. Mandal
             </h3>
-            <p className='text-gray-600 dark:text-gray-300 leading-relaxed'>
-              With over 2 years of experience in full-stack development, I
-              specialize in creating scalable web applications and intuitive
-              user interfaces. Im passionate about clean code, modern design,
-              and continuous learning.
-            </p>
-            <p className='text-gray-600 dark:text-gray-300 leading-relaxed'>
+            <div className='flex justify-center lg:justify-start'>
+              <p className='text-gray-600 dark:text-gray-300 leading-relaxed text-justify'>
+                With over 2 years of experience in full-stack development, I
+                specialize in creating scalable web applications and intuitive
+                user interfaces. Im passionate about clean code, modern design,
+                and continuous learning.
+              </p>
+            </div>
+
+            <p className='text-gray-600 dark:text-gray-300 leading-relaxed text-center lg:text-left'>
               When Im not coding, youll find me playing videogames and watching
               animes.
             </p>
-            <div className='flex flex-wrap gap-3 pt-4'>
+            <div className='flex flex-wrap gap-3 pt-4 justify-center lg:justify-start'>
               {techStack.map((tech) => (
                 <span
                   key={tech}

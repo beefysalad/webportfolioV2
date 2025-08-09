@@ -41,10 +41,10 @@ export const Education = () => {
             >
               <div className='flex flex-col md:flex-row md:items-start md:justify-between mb-6'>
                 <div className='mb-4 md:mb-0'>
-                  <h3 className='text-2xl font-bold text-gray-900 dark:text-white mb-2'>
+                  <h3 className='text-2xl font-bold text-white mb-2 text-center lg:text-left'>
                     {edu.degree}
                   </h3>
-                  <h4 className='text-xl text-blue-600 dark:text-blue-400 font-semibold'>
+                  <h4 className='text-xl text-blue-400 font-semibold text-center lg:text-left'>
                     {edu.school}
                   </h4>
                 </div>
@@ -56,10 +56,10 @@ export const Education = () => {
                 {edu.description}
               </p>
               <div>
-                <h5 className='font-semibold text-gray-900 dark:text-white mb-3'>
+                <h5 className='font-semibold text-white mb-3 text-center lg:text-left'>
                   Key Coursework:
                 </h5>
-                <div className='flex flex-wrap gap-3 pt-4'>
+                <div className='flex flex-wrap gap-3 pt-4 justify-center lg:justify-start'>
                   {edu.coursework.map((course) => (
                     <span
                       key={course}

@@ -7,7 +7,7 @@ export const Experience = () => {
     <section id='experience' className='py-20 px-4 sm:px-6 lg:px-8'>
       <div className='max-w-6xl mx-auto'>
         <div className='text-center mb-16'>
-          <h2 className='text-4xl font-bold mb-4 text-gray-900 dark:text-white'>
+          <h2 className='text-4xl font-bold mb-4 text-white'>
             Work Experience
           </h2>
           <div className='w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto mb-8'></div>
@@ -23,25 +23,28 @@ export const Experience = () => {
             >
               <div className='flex flex-col md:flex-row md:items-start md:justify-between mb-6'>
                 <div className='mb-4 md:mb-0'>
-                  <h3 className='text-2xl font-bold text-gray-900 dark:text-white mb-2'>
+                  <h3 className='text-2xl font-bold text-white mb-2 text-center lg:text-left'>
                     {exp.title}
                   </h3>
-                  <h4 className='text-xl text-blue-600 dark:text-blue-400 font-semibold'>
+                  <h4 className='text-xl text-blue-400 font-semibold text-center lg:text-left'>
                     {exp.company}
                   </h4>
                 </div>
-                <span className='px-4 py-2 bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded-full text-sm font-medium'>
+                <span className='px-4 py-2 bg-blue-900/30 text-blue-300 rounded-full text-sm font-medium text-center lg:text-left'>
                   {exp.period}
                 </span>
               </div>
-              <p className='text-gray-600 dark:text-gray-300 mb-6 leading-relaxed'>
-                {exp.description}
-              </p>
+              <div className='flex justify-center lg:justify-start'>
+                <p className='text-gray-600 dark:text-gray-300 mb-6 leading-relaxed text-justify'>
+                  {exp.description}
+                </p>
+              </div>
+
               <div className='space-y-2'>
-                <h5 className='font-semibold text-gray-900 dark:text-white mb-3'>
+                <h5 className='font-semibold text-gray-900 dark:text-white mb-3 text-center lg:text-left'>
                   Key Achievements:
                 </h5>
-                <ul className='space-y-2'>
+                <ul className='space-y-2 text-justify'>
                   {exp.achievements.map((achievement, i) => (
                     <li key={i} className='flex items-start'>
                       <div className='w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0'></div>
