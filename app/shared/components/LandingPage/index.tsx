@@ -9,6 +9,7 @@ import { Experience } from "../Experience";
 import { Education } from "../Education";
 import { Footer } from "../Footer";
 import { Projects } from "../Projects";
+import { Contact } from "../Contact";
 
 export const LandingPage = () => {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
@@ -30,6 +31,7 @@ export const LandingPage = () => {
       <Experience />
       <Education />
       <Projects />
+      <Contact />
       <Footer />
     </div>
   );

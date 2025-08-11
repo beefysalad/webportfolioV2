@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "John Patrick Ryan Mandal | Portfolio",
+  title: "John Patrick Ryan Mandal | Software Engineer",
   description: "Software Engineer based in the Philippines.",
 };
 

@@ -133,6 +133,36 @@ const CONSTANTS = {
       live: "#",
     },
   ],
+  NODEMAILER: {
+    SERVICE: "gmail",
+    SUBJECT: "PORTFOLIO",
+    BODY: `
+    <div style="font-family: Arial, sans-serif; background-color: #f9f9f9; padding: 30px;">
+      <div style="max-width: 600px; margin: auto; background: #ffffff; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+        
+        <div style="background: linear-gradient(to right, #2563eb, #9333ea); padding: 20px; text-align: center;">
+          <h1 style="color: white; margin: 0; font-size: 24px;">New Portfolio Contact</h1>
+        </div>
+        
+        <div style="padding: 20px; color: #333333; line-height: 1.6;">
+          <p style="font-size: 16px;">You’ve received a new message from your portfolio contact form:</p>
+          
+          <div style="background: #f3f4f6; padding: 15px; border-radius: 8px; margin-top: 15px;">
+            <p><strong>Name:</strong> {{name}}</p>
+            <p><strong>Email:</strong> {{email}}</p>
+            <p><strong>Subject:</strong> {{subject}}</p>
+            <p><strong>Message:</strong><br/>{{message}}</p>
+          </div>
+          
+          <p style="margin-top: 20px; font-size: 14px; color: #6b7280;">
+            This email was sent automatically from your portfolio website.
+          </p>
+        </div>
+        
+      </div>
+    </div>
+    `,
+  },
 };
 
 export default CONSTANTS;
