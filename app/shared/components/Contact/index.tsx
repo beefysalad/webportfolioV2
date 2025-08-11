@@ -97,9 +97,8 @@ export const Contact = () => {
             ></textarea>
           </div>
           <button
-            // className='w-full py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg font-semibold hover:from-blue-700 hover:to-purple-700 transform hover:scale-105 transition-all duration-300 shadow-lg'
+            className='w-full py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg font-semibold hover:from-blue-700 hover:to-purple-700 transform hover:scale-105 transition-all duration-300 shadow-lg'
             onClick={handleButtonSubmit}
-            disabled={true}
           >
             Send Message
           </button>
