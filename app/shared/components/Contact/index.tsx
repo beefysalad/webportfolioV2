@@ -1,6 +1,6 @@
-import React, { useState } from "react";
-import CONSTANTS from "../../constants";
 import axios from "axios";
+import { useState } from "react";
+import CONSTANTS from "../../constants";
 interface IContact {
   name: string;
   email: string;
@@ -14,23 +14,12 @@ export const Contact = () => {
     name: "",
     subject: "",
   });
-  const [loading, setLoading] = useState<boolean>(false);
   const handleButtonSubmit = async () => {
-    setLoading(true);
-    // console.log(emailBody);
     try {
       await axios.post("/api/send-email", emailBody);
     } catch (error) {
       console.error(error);
-    } finally {
-      setLoading(false);
     }
-    // setEmailBody({
-    //   email: "",
-    //   message: "",
-    //   name: "",
-    //   subject: "",
-    // });
   };
   return (
     <section
@@ -44,7 +33,7 @@ export const Contact = () => {
           </h2>
           <div className='w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto mb-8'></div>
           <p className='text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto'>
-            Have a project in mind? Let's discuss how we can work together to
+            Have a project in mind? Lets discuss how we can work together to
             bring your ideas to life.
           </p>
         </div>
